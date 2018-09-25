@@ -1,0 +1,50 @@
+/* pages/certificate/certificate.wxss */
+@import './../../utils/wxss/iconfont.wxss';
+page{
+  background-color: #E6E9EC;
+}
+.uploadImg{
+  width:80%;
+  height: 388rpx;
+  background-color: #D2D5D8;
+  margin: 60rpx auto 30rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden
+}
+.add{
+  font-size: 50rpx;
+  color: rgba(0,0,0,.6)
+}
+.hint{
+  font-size: 26rpx;
+  color:#5E5D5D;
+  margin-left:10%;
+}
+.certicate{
+  font-size: 26rpx;
+  color:#373636;
+  text-align: center;
+}
+.hideImg{
+  display: none;
+}
+.save{
+  background-color: #00c882;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.savePress{
+  background-color: #1a9c6f;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.saveView{
+  margin-top:350rpx;
+}

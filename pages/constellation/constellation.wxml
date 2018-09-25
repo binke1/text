@@ -1,0 +1,24 @@
+<!--pages/constellation/constellation.wxml-->
+<view class='content'>
+  <view bindtap='bb' class='common age'>
+    <view>
+      <text>年龄</text>
+    </view>
+    <view>
+      <picker mode="date" value="{{time}}"  end="{{nowDate}}" bindchange="bindTimeChange">
+        <text class='myColor'>{{age}}岁</text>
+      </picker>
+    </view>
+  </view>
+  <view class='common'>
+    <view>
+      <text>星座</text>
+    </view>
+    <view>
+      <text class='myColor'>{{constellation}}</text>
+    </view>
+  </view>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveAge'>保存</button>
+</view>

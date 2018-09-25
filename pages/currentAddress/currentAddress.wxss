@@ -1,0 +1,48 @@
+/* pages/currentAddress/currentAddress.wxss */
+@import './../../utils/wxss/iconfont';
+.myEdit{
+  margin: 50rpx 0 30rpx 5%;
+}
+input{
+  width: 80%;
+  height:84rpx;
+  border:1px solid #333;
+  border-radius: 16rpx;
+  margin: auto 5%;
+  padding: 0 5%;
+  text-align: right;
+  color:#c3c3c3;
+}
+picker{
+  text-align: right;
+  width: 80%;
+  margin:auto;
+  padding: 20rpx 5%;
+  border-radius: 16rpx;
+  border:1px solid #333;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+  /* align-items: center; */
+}
+.iconfont{
+  color: #c3c3c3;
+  text-align: right;
+}
+.save{
+  background-color: #00c882;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.savePress{
+  background-color: #1a9c6f;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.saveView{
+  margin-top:100rpx;
+}

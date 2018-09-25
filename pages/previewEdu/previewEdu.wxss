@@ -1,0 +1,54 @@
+/* pages/previewEdu/previewEdu.wxss */
+page{
+  background-color: #E6E9EC;
+}
+.content{
+  margin-top: 40rpx
+}
+.workContent{
+  width: 94%;
+  background-color: white;
+  padding: 10rpx 3%;
+  margin: 10rpx 0;
+  position: relative;
+}
+.workContent view{
+  margin: 10rpx;
+}
+.edit{
+  width: 20%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  position: absolute;
+  font-size: 30rpx;
+  color:#00c882;
+  top: 0;
+  right: 0;
+}
+.color1{
+  color:#6e6e6e;
+}
+.color2{
+  font-weight: 500;
+  color:#191919;
+}
+.save{
+  background-color: #00c882;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.savePress{
+  background-color: #1a9c6f;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.saveView{
+  margin-top:100rpx;
+}

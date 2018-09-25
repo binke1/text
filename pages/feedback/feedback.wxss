@@ -1,0 +1,45 @@
+/* pages/feedback/feedback.wxss */
+page{
+  background-color: #e6e9ec;
+}
+/* .pageTitle{
+  font-size:30rpx;
+  margin:30rpx 0 30rpx 40rpx;
+} */
+.content{
+  background-color: white;
+  width: 100%;
+  height: 480rpx;
+  padding: 20rpx
+}
+.mentorC{
+  position: relative;
+  margin-top: 50rpx;
+}
+.save{
+  background-color: #00c882;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.savePress{
+  background-color: #1a9c6f;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.saveView{
+  margin-top:100rpx;
+}
+.limit{
+  position: absolute;
+  right:20rpx;
+  bottom: 20rpx;
+  font-size: 24rpx;
+  color:#A19E9E;
+}
+.limitColor{
+  color:#129C2F;
+}

@@ -1,0 +1,12 @@
+<!--pages/englishLevel/englishLevel.wxml-->
+<view class='myEdit'>
+  <view>
+    外语等级
+  </view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <text class='iconfont icon-mjiantou-copy'>{{array[index]}}</text>
+  </picker>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveEnglish'>保存</button>
+</view>

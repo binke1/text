@@ -1,0 +1,71 @@
+/* pages/editPhone/editPhone.wxss */
+@import './../../utils/wxss/iconfont.wxss';
+input {
+  width: 97%;
+  height: 84rpx;
+  border: 1px solid #333;
+  border-radius: 16rpx;
+  padding-left: 3%;
+}
+
+page {
+  background-color: #e6e9ec;
+}
+
+.nick {
+  width: 85%;
+  margin: 40rpx auto;
+}
+
+.hint {
+  font-size: 26rpx;
+  color: #a19e9e;
+}
+
+.selColor {
+  color: #129c2f;
+}
+
+.limit{
+  font-size:24rpx;
+  color:#A19E9E;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.theInput {
+  position: relative;
+}
+
+.iconfont {
+  position: absolute;
+  right: 20rpx;
+  bottom: 18rpx;
+  font-size: 50rpx;
+  z-index: 100;
+}
+
+.save{
+  background-color: #00c882;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.savePress{
+  background-color: #1a9c6f;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.saveView{
+  margin-top:100rpx;
+}
+
+.limit {
+  font-size: 24rpx;
+  color: #a19e9e;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,67 @@
+<!--pages/workExperience/workExperience.wxml-->
+<view class='edu'>
+  <view id='education1'>
+    <text>工作经历</text>
+  </view>
+  <view bindtap='clickCompany'>
+    <view>
+      <text>公司名字</text>
+    </view>
+    <view class='myCommon'>
+      <text class='fontC'>{{companyName}}</text>
+      <text class='iconfont icon-mjiantou-copy'></text>
+    </view>
+  </view>
+  <view bindtap='clickPosition'>
+    <view>
+      <text>职位名称</text>
+    </view>
+    <view class='myCommon'>
+      <text class='fontC'>{{positionName}}</text>
+      <text class='iconfont icon-mjiantou-copy'></text>
+    </view>
+  </view>
+  <view>
+    <view>
+      <text>开始时间</text>
+    </view>
+    <view>
+      <picker mode='date' fields='month' bindchange="bindDateChange1" value="{{date1}}">
+        <view class='myCommon'>
+          <text class="fontC">{{startDate}}</text>
+          <text class='iconfont icon-mjiantou-copy'></text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view>
+    <view>
+      <text>结束时间</text>
+    </view>
+    <view>
+      <picker mode='date' fields='month' bindchange="bindDateChange2" value="{{date2}}">
+        <view class='myCommon'>
+          <text class='fontC'>{{endDate}}</text>
+          <text class='iconfont icon-mjiantou-copy'></text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view id='education'>
+    <text>工作内容</text>
+  </view>
+  <view class='content'>
+    <textarea maxlength='300' value='{{workContent}}' bindinput='contentChange'></textarea>
+    <view class='limit'>
+      <text class='limitColor'>{{num}}/</text>
+      <text>300</text>
+    </view>
+  </view>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveWorkExperience'>保存</button>
+  <button wx:if='{{isShowDel}}' class='delDefault {{del}}' bindtouchstart='changButton1' bindtouchend='reductionButton1' bindtap='deleteWorkExperience'>删除</button>
+  <!-- <view bindtap='addWork' class='{{addArrClass}}'>
+    <text>+添加工作经历</text>
+  </view> -->
+</view>

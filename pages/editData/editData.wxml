@@ -1,0 +1,152 @@
+<!--pages/editData/editData.wxml-->
+<view class='container'>
+  <view class='upload-t'>
+    <view bindtap='uploadImg' class='lgImg'>
+      <text class='iconfont {{isShowIcon}} icon-jiahao'></text>
+      <image mode='aspectFill' class='{{isShowImg}}' src='{{img}}'></image>
+    </view>
+    <view>
+      <view bindtap='uploadImg1' class='mdImg'>
+        <text class='iconfont {{isShowIcon1}} icon-jiahao'></text>
+        <image mode='aspectFill' class='{{isShowImg1}}' src='{{img1}}'></image>
+      </view>
+      <view bindtap='uploadImg2' class='two-mdImg mdImg'>
+        <text class='iconfont {{isShowIcon2}} icon-jiahao'></text>
+        <image mode='aspectFill' class='{{isShowImg2}}' src='{{img2}}'></image>
+      </view>
+    </view>
+  </view>
+  <view class='upload-b'>
+    <view bindtap='uploadImg3' class='mdImg'>
+      <text class='iconfont {{isShowIcon3}} icon-jiahao'></text>
+      <image mode='aspectFill' class='{{isShowImg3}}' src='{{img3}}'></image>
+    </view>
+    <view bindtap='uploadImg4' class='mdImg'>
+      <text class='iconfont {{isShowIcon4}} icon-jiahao'></text>
+      <image mode='aspectFill' class='{{isShowImg4}}' src='{{img4}}'></image>
+    </view>
+    <view bindtap='uploadImg5' class='mdImg'>
+      <text class='iconfont {{isShowIcon5}} icon-jiahao'></text>
+      <image mode='aspectFill' class='{{isShowImg5}}' src='{{img5}}'></image>
+    </view>
+  </view>
+  <view class='editList'>
+    <navigator url='./../nickName/nickName'>
+      <view>
+        <text class='listTitle'>姓名</text>
+        <block>
+          <text class='iconfont icon-mjiantou-copy'>{{nickName !== null && nickName.length > 0?nickName:'无'}}</text>
+        </block>
+      </view>
+    </navigator>
+    <navigator url='./../national/national'>
+      <view>
+        <text class='listTitle'>民族</text>
+        <block>
+          <text class='iconfont icon-mjiantou-copy'>{{national !== null && national.length > 0?national:'无'}}</text>
+        </block>
+      </view>
+    </navigator>
+        <navigator url='./../constellation/constellation'>
+      <view class='mandatory'>
+        <!-- <text class='importInfo'>*</text> -->
+        <text class='listTitle'>出生日期</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <view>
+      <text class='listTitle'>星座</text>
+      <text class='listContent'>{{constellation === null?'':constellation}}</text>
+    </view>
+    <view>
+      <text class='listTitle'>年龄</text>
+      <text class='listContent'>{{age === null?0:age}}岁</text>
+    </view>
+    <navigator url='./../politicalLandscape/politicalLandscape'>
+      <view class='mandatory'>
+        <!-- <text class='importInfo'>*</text> -->
+        <text class='listTitle'>政治面貌</text>
+        <text class='iconfont icon-mjiantou-copy'>{{politicalLandscape === null?'':politicalLandscape}}</text>
+      </view>
+    </navigator>
+    <navigator url='./../englishLevel/englishLevel'>
+      <view class='mandatory'>
+        <!-- <text class='importInfo'>*</text> -->
+        <text class='listTitle'>外语等级</text>
+        <text class='iconfont icon-mjiantou-copy'>{{englishLevel === null?'':englishLevel}}</text>
+      </view>
+    </navigator>
+    <navigator url='./../skillsCertificate/skillsCertificate'>
+      <view class='mandatory'>
+        <!-- <text class='importInfo'>*</text> -->
+        <text class='listTitle'>技能证书</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <navigator url='./../email/email'>
+      <view class='mandatory'>
+        <!-- <text class='importInfo'>*</text> -->
+        <text class='listTitle'>E-mail</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <navigator url='./../currentAddress/currentAddress'>
+      <view class='mandatory'>
+        <!-- <text class='importInfo'>*</text> -->
+        <text class='listTitle'>现住址</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <navigator url='./../personalInterests/personalInterests'>
+      <view class='mandatory'>
+        <!-- <text class='importInfo'>*</text> -->
+        <text class='listTitle'>个人爱好</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <navigator url='./../myAdvantage/myAdvantage'>
+      <view class='myYS'>
+        <!-- <text class='importInfo'>*</text> -->
+        <text class='listTitle'>我的优势</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <navigator url='{{eduPath}}'>
+      <view bindtap='clickTime' class='mandatory'>
+        <!-- <text class='importInfo'>*</text> -->
+        <text class='listTitle'>教育经历</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <navigator url='{{getPath}}'>
+      <view>
+        <text class='listTitle'>工作经历</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <navigator url='./../mentorRecomm/mentorRecomm'>
+      <view>
+        <text class='listTitle'>导师推荐</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <navigator url='./../myLabel/myLabel'>
+      <view>
+        <text class='listTitle'>我的标签</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <navigator url='./../editPhone/editPhone'>
+      <view>
+        <text class='listTitle'>手机号</text>
+        <text class='iconfont icon-mjiantou-copy'></text>
+      </view>
+    </navigator>
+    <navigator url='./../microSignal/microSignal'>
+      <view>
+        <text class='listTitle'>微信号</text>
+        <text class='iconfont icon-mjiantou-copy'>选填</text>
+      </view>
+    </navigator>
+  </view>
+</view>

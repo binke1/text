@@ -1,0 +1,76 @@
+<!--pages/internship/internship.wxml-->
+<view class='shuffling'>
+  <swiper circular="{{circular}}" indicator-active-color="#fff" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="1">
+      <swiper-item>
+        <image src="{{item}}" mode="aspectFill" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='content'>
+  <view class='contain-h'>
+    <view>
+      <text class='title'>{{positionInfo.name}}</text>
+    </view>
+    <view bindtap='userColl' class='like'>
+      <image src='{{userCollStatus}}'></image>
+      <text class='collNum'>{{collNum}}</text>
+    </view>
+  </view>
+  <view class='contain-c'>
+    <text>{{positionInfo.information}}</text>
+  </view>
+  <view class='{{isShowGuan}}'>
+    <text>历届管培生</text>
+  </view>
+  <view>
+    <view bindtap='popUpDetails' data-id='{{item.id}}' class='successiveEva' wx:for="{{evalArr}}" wx:key="{{item.id}}">
+      <view class='stuHeadImg'>
+        <image mode='aspectFill' src='http://gpsapi.antup.me/resources/findResourcesById?id={{item.headPortrait}}'></image>
+      </view>
+       <view class='stuMain'>
+      <view>
+        <text class='stuName'>{{item.name}}</text>
+      </view>
+      <view>
+        <text class='stuContent'>{{item.synopsis}}</text>
+      </view>
+    </view>
+    </view>
+  </view>
+</view>
+<view class='submitAPPli'>
+  <button bindtap='submitApplication' class='subApplication {{isSuccess}}'>提交申请</button>
+</view>
+<view id='{{isShowDetail}}'>
+  <view class='stuDetails-c'>
+    <text bindtap='closeDetail' class='close iconfont icon-2guanbi'></text>
+    <view>
+      <view class='stuDetails-t'>
+        <image class='stuDetailsImg' src='http://gpsapi.antup.me/resources/findResourcesById?id={{popUpDetailsObj.headPortrait}}'></image>
+        <view class='stuDetails-t-r'>
+          <view>
+            <text class='stuName'>{{popUpDetailsObj.name}}</text>
+          </view>
+          <view>
+            <text class='sex'>{{popUpDetailsObj.sex?'男':'女'}}</text>
+            <text>23岁</text>
+          </view>
+          <view class='conste'>
+            <text>{{popUpDetailsObj.constellation}}</text>
+          </view>
+          <view>
+            <text>{{positionInfo.name}}</text>
+          </view>
+          <view>
+            <text>{{startTime}}-{{endTime}}</text>
+          </view>
+        </view>
+      </view>
+      <view class='stu-conetent'>
+        <text>{{popUpDetailsObj.content}}</text>
+      </view>
+    </view>
+  </view>
+</view>

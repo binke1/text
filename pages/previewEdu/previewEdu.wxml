@@ -1,0 +1,16 @@
+<!--pages/previewEdu/previewEdu.wxml-->
+<view class='content'>
+  <view wx:for='{{eduArr}}' wx:key='{{item.id}}'>
+    <view class='workContent'>
+      <view class='color1'>{{item.startTime}}-{{item.endTime}}</view>
+      <view class='color2'>{{item.school}}</view>
+      <view class='color1'>{{item.educationBackground}}/{{item.specialty}}</view>
+      <view class='edit' data-id='{{item.id}}' bindtap='editEdu'>
+        <text>编辑</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='saveView'>
+  <button wx:if='{{isShowAddBtn}}' class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='addEdu'>添加教育经历</button>
+</view>

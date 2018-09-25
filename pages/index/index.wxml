@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view style='height:{{equipment}}' class='container'>
+  <view wx:for="{{array}}" data-id='{{item.id}}' wx:key="{{item.id}}" id='{{item.panelId}}' bindtap='jumpInternship' bindtouchend='userEnd' bindtouchstart='userStart' class='{{item.className}} common {{item.anima}}'>
+    <view class='{{item.content}}'>
+      <view class='title'>
+        <text data-id='{{item.id}}'>{{item.name}}</text>
+      </view>
+      <view data-id='{{item.id}}' class='us-content'>
+        <view data-id='{{item.id}}'>
+          <text data-id='{{item.id}}'>{{item.briefIntroduction}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='mode'>
+  </view>
+</view>
+<view class='business'>
+   <view class='business-r'> 
+    <button open-type='share' plain='true' bindtap='onShareAppMessage'>
+      转发
+    </button>
+   </view> 
+</view>

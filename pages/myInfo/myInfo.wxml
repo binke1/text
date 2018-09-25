@@ -1,0 +1,50 @@
+<!--pages/myInfo/myInfo.wxml-->
+<view class='basicInfo'>
+  <view class='userHead'>
+    <image src='{{userHeadImg}}'></image>
+  </view>
+  <view>
+    <view class='name'>{{userName}}</view>
+    <view wx:if="{{s === null ?false:true}}" class='age'>{{s}}0后</view>
+  </view>
+</view>
+<view class='infoList'>
+  <view bindtap='personalPreview'>
+    <text class='iconfont icon-yulan1'></text>
+    <text>个人预览</text>
+  </view>
+  <!-- <view bindtap='jumpMsg'>
+    <text class='iconfont icon-xiaoxi'></text>
+    <text>消息</text>
+  </view> -->
+  <navigator url='./../editData/editData'>
+    <view>
+      <text class='iconfont icon-bianji'></text>
+      <text>编辑资料</text>
+    </view>
+  </navigator>
+  <navigator url='./../certificate/certificate'>
+    <view>
+      <text class='iconfont icon-xueli'></text>
+      <text>在校证明</text>
+    </view>
+  </navigator>
+  <!-- <navigator url='./../editPhone/editPhone'>
+    <view>
+      <text class='iconfont icon-shouji'></text>
+      <text>换绑手机</text>
+    </view>
+  </navigator> -->
+  <!-- <navigator url='./../additionalInformation/additionalInformation'>
+    <view>
+      <text class='iconfont icon-ziliao'></text>
+      <text>补充资料</text>
+    </view>
+  </navigator> -->
+    <navigator url='./../feedback/feedback'>
+    <view>
+      <text class='iconfont icon-yijianfankui'></text>
+      <text>意见反馈</text>
+    </view>
+  </navigator>
+</view>

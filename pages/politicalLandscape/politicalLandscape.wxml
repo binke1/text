@@ -1,0 +1,12 @@
+<!--pages/politicalLandscape/politicalLandscape.wxml-->
+<view class='myEdit'>
+  <view>
+    政治面貌
+  </view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <text class='iconfont icon-mjiantou-copy'>{{array[index]}}</text>
+  </picker>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='savePolitical'>保存</button>
+</view>

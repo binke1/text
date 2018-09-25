@@ -1,0 +1,65 @@
+<!--pages/personView/personView.wxml-->
+<view wx:if="{{isShowShuffling}}" class='shuffling'>
+  <swiper circular="{{circular}}" indicator-active-color="#fff" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="1">
+      <swiper-item>
+        <image mode='aspectFill' src="{{item}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='content'>
+  <view class='info'>
+    <view class='infoMain'>
+      <view>
+        <view>
+          <text class='name'>{{userInfo.name}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='eduInfo'>
+      <text class='iconfont icon-xueli'></text>
+      <text class='record'>{{educationBackground}}</text>
+      <text>{{userInfo.constellation !== null?userInfo.constellation:''}}</text>
+    </view>
+  </view>
+  <view class='age'>
+    <text>{{age}}岁</text>
+  </view>
+  <view class='age school'>
+    <text>{{school}}</text>
+  </view>
+  <view class='age professional'>
+    <text>{{specialty}}</text>
+  </view>
+  <view class='sapceing'>
+    <!-- <view><text class='labelTitle'>{{userInfo.liftMotto}}</text></view> -->
+    <view>
+      <text class='labelname' wx:for="{{labelArr}}" wx:key="{{item.id}}">{{item.name}}</text>
+    </view>
+  </view>
+  <view wx:if="{{isShowMentor}}" class='sapceing'>
+    <view class='twoSize'>
+      <text>导师推荐</text>
+    </view>
+    <view class='twoContent'>
+      <text>{{mentorRecommend}}</text>
+    </view>
+  </view>
+  <view wx:if="{{isshowEdu}}" class='sapceing'>
+    <view class='twoSize'>
+      <text>教育经历</text>
+    </view>
+    <view class='twoContent'>
+      <text>{{experience}}</text>
+    </view>
+  </view>
+  <view wx:if="{{isshowAdvantage}}" class='sapceing'>
+    <view class='twoSize'>
+      <text>我的优势</text>
+    </view>
+    <view class='twoContent'>
+      <text>{{advantage}}</text>
+    </view>
+  </view>
+</view>

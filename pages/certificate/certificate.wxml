@@ -1,0 +1,19 @@
+<!--pages/certificate/certificate.wxml-->
+<view bindtap='selectImg' class='uploadImg'>
+  <text class='iconfont icon-jiahao {{textIsShow}}'></text>
+  <image mode='aspectFit' class='{{isShow}}' src='{{uploadSrc}}'></image>
+</view>
+<view class='certicate'>
+ <text>在校证明</text>
+</view>
+<view class='hint'>
+<view>
+<text>1.上传个人学生证</text>
+</view>
+  <view>
+  <text>2.仅限个人证件</text>
+  </view>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveCertificate'>保存</button>
+</view>

@@ -1,0 +1,160 @@
+/* pages/workExperience/workExperience.wxss */
+@import './../../utils/wxss/iconfont.wxss';
+
+.edu {
+  margin-bottom: 50rpx;
+}
+
+.edu>view {
+  font-size: 32rpx;
+  padding: 20rpx 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+page {
+  background-color: #e6e9ec;
+}
+
+.edu view picker {
+  width: 500rpx;
+  text-align: right;
+}
+
+navigator {
+  width: 500rpx;
+  text-align: right;
+}
+
+.professional {
+  width: 500rpx;
+  text-align: right;
+  /* color: rgba(0,0,0,.44); */
+}
+
+.inputPlace {
+  color: rgba(0, 0, 0, 0.44);
+  font-weight: normal;
+  font-size: 32rpx;
+}
+
+/* .professional input{
+  color:rgba(0,0,0,.44);
+} */
+
+#education {
+  background-color: #e6e9ec;
+}
+
+#education1 {
+  background-color: #e6e9ec;
+}
+
+.fontC {
+  color: #c3c3c3;
+}
+
+textarea {
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  background-color: white;
+}
+
+.content view {
+  position: absolute;
+  right: 20rpx;
+  bottom: 16rpx;
+  font-size: 12px;
+}
+
+.content textarea {
+  font-weight: normal;
+  color: #000;
+}
+
+.newText {
+  color: #09bb07;
+}
+
+.num {
+  color: rgba(128, 128, 128, 0.8);
+}
+
+.iconfont {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.44);
+  font-size: 32rpx;
+}
+
+.myCommon {
+  height: 42rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.save {
+  background-color: #00c882;
+  color: white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+
+.savePress {
+  background-color: #1a9c6f;
+  color: white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+
+.delDefault {
+  margin-top: 30rpx;
+}
+
+.saveView {
+  margin-top: 100rpx;
+  margin-bottom: 100rpx;
+}
+
+.mandatory {
+  color: red;
+  margin-right: 6rpx;
+}
+
+.backColor {
+  background-color: white;
+}
+
+.limit {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  font-size: 24rpx;
+  color: #a19e9e;
+}
+
+.limitColor {
+  color: #129c2f;
+}
+
+.addWork {
+  color: #a19e9e;
+  font-size: 30rpx;
+  font-weight: 500;
+  margin-top: 30rpx;
+  text-align: center;
+}
+
+.hideAddWork {
+  display: none;
+}

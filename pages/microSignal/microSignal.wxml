@@ -1,0 +1,15 @@
+<!--pages/microSignal/microSignal.wxml-->
+<view class='nick'>
+  <view class='theInput'>
+    <input focus='{{isFocus}}' bindinput='getLength' value='{{str}}'></input>
+    <view  bindtap='clearValue' class='guanbi'>
+      <text class='iconfont icon-2guanbi'></text>
+    </view>
+  </view>
+  <view>
+    <text class='hint'>可在与企业联系时，提供微信号</text>
+  </view>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveMicroSignal'>保存</button>
+</view>

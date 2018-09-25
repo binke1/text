@@ -1,0 +1,18 @@
+<!--pages/nickName/nickName.wxml-->
+<view class='nick'>
+  <view class='theInput'>
+    <input focus='{{isFocus}}' value='{{str}}' bindinput='getLength'></input>
+    <view  bindtap='clearValue' class='guanbi'>
+      <text class='iconfont icon-2guanbi'></text>
+    </view>
+  </view>
+  <view>
+    <text class='hint'>请输入你的姓名，不能为空</text>
+  </view>
+  <view class='limit'>
+    <text class='selColor'>{{num}}/</text><text>4</text>
+  </view>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveNickName'>保存</button>
+</view>

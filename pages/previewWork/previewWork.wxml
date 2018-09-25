@@ -1,0 +1,16 @@
+<!--pages/previewWork/previewWork.wxml-->
+<view class='content'>
+  <view wx:for='{{workArr}}' wx:key='{{item.id}}'>
+    <view class='workContent'>
+      <view class='color1'>{{item.startTime}}-{{item.endTime}}</view>
+      <view class='color2'>{{item.companyName}}</view>
+      <view class='color1'>{{item.position}}</view>
+      <view class='edit' data-id='{{item.id}}' bindtap='editWork'>
+        <text>编辑</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='saveView'>
+  <button wx:if='{{isShowAddBtn}}' class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='addWork'>添加工作经历</button>
+</view>

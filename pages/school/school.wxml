@@ -1,0 +1,11 @@
+<!--pages/school/school.wxml-->
+<view class='nick'>
+  <input confirm-type='done' type='text' focus='{{isFocus}}' placeholder='请输入学校名称' value='{{str}}' placeholder-class='fontSize' bindinput='getLength'></input>
+  <text bindtap='clearValue' class='iconfont icon-2guanbi'></text>
+</view>
+<view bindtap='getSchoolName' data-name='{{item.name}}' class='list' wx:for="{{schoolArr}}" wx:key="{{item.id}}">
+  <text>{{item.name}}</text>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveSchool'>完成</button>
+</view>

@@ -1,0 +1,129 @@
+/* pages/time/time.wxss */
+@import './../../utils/wxss/iconfont.wxss';
+
+.edu>view {
+  font-size: 32rpx;
+  padding: 20rpx 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
+page {
+  background-color: #e6e9ec;
+}
+
+.edu view picker {
+  width: 500rpx;
+  text-align: right;
+}
+
+.delDefault {
+  margin-top: 30rpx;
+}
+
+navigator {
+  width: 500rpx;
+  text-align: right;
+}
+
+.professional {
+  width: 500rpx;
+  text-align: right;
+  /* color: rgba(0,0,0,.44); */
+}
+
+.inputPlace {
+  color: rgba(0, 0, 0, 0.44);
+  font-weight: normal;
+  font-size: 32rpx;
+}
+
+/* .professional input{
+  color:rgba(0,0,0,.44);
+} */
+
+#education {
+  background-color: #e6e9ec;
+}
+
+#education1{
+    background-color: #e6e9ec;
+}
+
+.fontC {
+  color: #c3c3c3;
+}
+
+textarea {
+  width: 100%;
+}
+.content {
+  position: relative;
+  background-color: white;
+}
+
+.content view {
+  position: absolute;
+  right: 20rpx;
+  bottom: 16rpx;
+  font-size: 12px;
+}
+
+.content textarea {
+  font-weight: normal;
+  color: #000;
+}
+
+.newText {
+  color: #09bb07;
+}
+
+.num {
+  color: rgba(128, 128, 128, 0.8);
+}
+
+.iconfont {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.44);
+  font-size: 32rpx;
+}
+
+.myCommon {
+  height: 42rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.save {
+  background-color: #00c882;
+  color: white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+
+.savePress {
+  background-color: #1a9c6f;
+  color: white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+
+.saveView {
+  margin-top: 100rpx;
+}
+
+.mandatory {
+  color: red;
+  margin-right: 6rpx;
+}
+.backColor{
+  background-color: white
+}

@@ -1,0 +1,55 @@
+/* pages/national/national.wxss */
+input{
+  width: 97%;
+  height:84rpx;
+  border:1px solid #333;
+  border-radius: 16rpx;
+  padding-left: 3%;
+}
+page{
+  background-color: #E6E9EC;
+}
+.nick{
+  width: 85%;
+  margin:40rpx auto;
+}
+.hint{
+  font-size:26rpx;
+  color:#A19E9E;
+}
+.selColor{
+  color:#129C2F;
+}
+.limit{
+  font-size:24rpx;
+  color:#A19E9E;
+  display: flex;
+  justify-content: flex-end;
+}
+.theInput{
+  position:relative;
+}
+.iconfont{
+  position: absolute;
+  right: 20rpx;
+  bottom: 18rpx;
+  font-size:50rpx;
+  z-index: 100
+}
+.save{
+  background-color: #00c882;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.savePress{
+  background-color: #1a9c6f;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.saveView{
+  margin-top:100rpx;
+}

@@ -1,0 +1,51 @@
+/* pages/constellation/constellation.wxss */
+page{
+  background-color: #E6E9EC;
+}
+.common {
+  width: 604rpx;
+  height: 84rpx;
+  border: 2rpx solid #333;
+  border-radius: 16rpx;
+  padding:0 30rpx 0 30rpx;
+  font-size: 30rpx;
+  display: flex;
+  /* align-content: center; */
+  flex-direction: row;
+  line-height: 84rpx;
+  justify-content: space-between;
+}
+.age{
+  margin-bottom: 28rpx;
+}
+.content {
+  margin-top:48rpx;
+  display: flex;
+   flex-direction: row;
+   flex-wrap: wrap; 
+  justify-content: center;
+}
+.myColor{
+  color: #87888A;
+}
+picker{
+  width: 500rpx;
+   text-align: right;
+}
+.save{
+  background-color: #00c882;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.savePress{
+  background-color: #1a9c6f;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.saveView{
+  margin-top:100rpx;
+}

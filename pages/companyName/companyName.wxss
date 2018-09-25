@@ -1,0 +1,68 @@
+/* pages/companyName/companyName.wxss */
+@import './../../utils/wxss/iconfont.wxss';
+page{
+  padding-bottom: 40rpx;
+}
+.nick{
+  position: relative;
+  margin: 40rpx auto 0; 
+}
+.list{
+  background-color: white;
+  border-top:1px solid rgba(0,0,0,.1);
+  padding:6px 3%;
+}
+.iconfont{
+  position: absolute;
+  right: 20rpx;
+  bottom: 18rpx;
+  font-size:50rpx;
+  z-index: 100
+}
+.guanbi{
+  position: absolute;
+  height: 100%;
+  top:10rpx;
+  right: 0;
+  width:100rpx;
+  z-index: 80
+
+}
+.theInput{
+  position:relative;
+}
+input{
+  width: 97%;
+  height:84rpx;
+  padding-left: 3%;
+  background-color: white;
+}
+ .fontSize{
+  font-size:24rpx;
+} 
+.iconfont{
+  position: absolute;
+  bottom:24rpx;
+  right: 30rpx;
+  z-index: 10
+}
+page{
+  background-color: #e6e9ec
+}
+.save{
+  background-color: #00c882;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.savePress{
+  background-color: #1a9c6f;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.saveView{
+  margin-top:100rpx;
+}

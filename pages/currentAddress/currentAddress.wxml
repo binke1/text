@@ -1,0 +1,14 @@
+<!--pages/currentAddress/currentAddress.wxml-->
+<view class='myEdit'>
+  地址
+</view>
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+  <text class='iconfont icon-mjiantou-copy'>{{region[0]}}{{region[1]}}{{region[2]}}</text>
+</picker>
+<view class='myEdit'>
+  详细地址
+</view>
+<input value='{{str}}' bindinput='getLength'></input>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveAddress'>保存</button>
+</view>

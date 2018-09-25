@@ -1,0 +1,15 @@
+<!--pages/phoneLogin/phoneLogin.wxml-->
+<view>
+  <view>
+    <image></image>
+  </view>
+  <view>
+    <input placeholder='手机号'></input>
+  </view>
+  <view>
+    <input placeholder='短信验证码'></input>
+  </view>
+  <view>
+    <button>登录</button>
+  </view>
+</view>

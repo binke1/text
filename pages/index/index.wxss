@@ -1,0 +1,158 @@
+/**index.wxss**/
+.container {
+  margin-top: 10rpx;
+  width: 100%;
+  /* height:926rpx; */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+page{
+  overflow: hidden;
+  width:750rpx;
+}
+view {
+  font-size: 12px;
+}
+.mode{
+  position: absolute;
+  margin-top:10;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index:9;
+}
+.common {
+  position: absolute;
+  margin-top:10%;
+  box-shadow: 10px 15px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #00c280;
+  overflow: hidden;
+  /* transition: all 0.2s linear; */
+}
+
+.common image {
+  width: 100%;
+  height: 100%;
+}
+
+.first {
+  z-index: 10;
+  width: 70%;
+  top: 0;
+  left: 8%;
+  height: 90%;
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+.first1 {
+  z-index: 10;
+  width: 70%;
+  top: 0;
+  left: 8%;
+  height: 90%;
+  opacity: 1;
+  /* transform: translateX(-800rpx); *//* transition: all .2s linear */
+}
+
+.two {
+  z-index: 8;
+  top: 5%;
+  left: 24%;
+  width: 60%;
+  height: 80%;
+  opacity: 0.6;
+  transition: all 0.2s linear;
+}
+
+/* .two1 {
+  z-index: 8;
+  top: 5%;
+  left: 18%;
+  width: 70%;
+  height: 90%;
+  opacity: 0.6;
+} */
+
+.three {
+  top: 10%;
+  left: 40%;
+  z-index: 5;
+  width: 50%;
+  height: 70%;
+  opacity: 0.4;
+  transition: all 0.2s linear;
+}
+
+.three1 {
+  top: 10%;
+  left: 40%;
+  z-index: 5;
+  width: 50%;
+  height: 70%;
+  opacity: 0.4;
+}
+.business {
+  margin-top: 40rpx;
+}
+.business-r {
+  margin-left: 80%;
+  width: 20%;
+  /* margin: 0; */
+  height: 60rpx;
+  border-radius: 30rpx 0 0 30rpx;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.2); 
+  box-shadow: 10rpx 10rpx 20rpx rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.business-r button{
+  height: 100%;
+  width: 100%;
+  font-size: 30rpx;
+  font-weight: bold;
+  border:none;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx 0 0 30rpx;
+  background-color: transparent;
+}
+.userText {
+  position: absolute;
+  bottom: 50rpx;
+  left: 40rpx;
+  width:65%; 
+}
+
+.title {
+  font-size: 66rpx;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.us-content {
+  color:white;
+  font-weight: 600;
+  border: 4rpx solid white;
+  padding: 15rpx 10rpx;
+}
+
+.us-content view {
+  font-size: 32rpx;
+}
+
+.ani1 {
+  transform: translateX(-800rpx);
+  transition: all 0.2s linear;
+}
+.hideContent{
+  display: none
+}

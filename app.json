@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/editData/editData",
+    "pages/internship/internship",
+    "pages/certificate/certificate",
+    "pages/nickName/nickName",
+    "pages/myAdvantage/myAdvantage",
+    "pages/personView/personView",
+    "pages/myLabel/myLabel",
+    "pages/mentorRecomm/mentorRecomm",
+    "pages/myInfo/myInfo",
+    "pages/msg/msg",
+    "pages/logs/logs",
+    "pages/time/time",
+    "pages/constellation/constellation",
+    "component/tabbar/tabbar",
+    "pages/school/school",
+    "pages/phoneLogin/phoneLogin",
+    "pages/feedback/feedback",
+    "pages/editPhone/editPhone",
+    "pages/microSignal/microSignal",
+    "pages/workExperience/workExperience",
+    "pages/companyName/companyName",
+    "pages/positionName/positionName",
+    "pages/national/national",
+    "pages/politicalLandscape/politicalLandscape",
+    "pages/englishLevel/englishLevel",
+    "pages/skillsCertificate/skillsCertificate",
+    "pages/currentAddress/currentAddress",
+    "pages/personalInterests/personalInterests",
+    "pages/email/email",
+    "pages/previewWork/previewWork",
+    "pages/previewEdu/previewEdu"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "管培生",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#959697",
+    "selectedColor": "#00c882",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "管培生",
+        "iconPath": "images/guanNo.png",
+        "selectedIconPath": "images/tc3.png"
+      },
+      {
+        "pagePath": "pages/msg/msg",
+        "text": "消息",
+        "iconPath": "images/tc4.png",
+        "selectedIconPath": "images/msgSelect.png"
+      },
+      {
+        "pagePath": "pages/myInfo/myInfo",
+        "text": "我的",
+        "iconPath": "images/tc5.png",
+        "selectedIconPath": "images/mySelect.png"
+      }
+    ]
+  }
+}

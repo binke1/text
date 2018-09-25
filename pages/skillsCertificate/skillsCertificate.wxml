@@ -1,0 +1,15 @@
+<!--pages/skillsCertificate/skillsCertificate.wxml-->
+<view class='nick'>
+  <view class='theInput'>
+    <textarea focus='{{isFocus}}' value='{{str}}' bindinput='getLength'></textarea>
+    <view  bindtap='clearValue' class='guanbi'>
+      <text class='iconfont icon-2guanbi'></text>
+    </view>
+  </view>
+  <view>
+    <text class='hint'>请输入你的技能证书，多个证书请用逗号分隔</text>
+  </view>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveSkillsCerti'>保存</button>
+</view>

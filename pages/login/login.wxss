@@ -1,0 +1,29 @@
+/* pages/login/login.wxss */
+view{
+  margin: auto;
+  text-align: center
+}
+button{
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.logo{
+  margin-top:200rpx;
+  margin-bottom:30rpx;
+}
+.logo image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+}
+.title{
+  margin: 10rpx;
+}
+.weixinLogin{
+  margin-top: 50rpx;
+}
+.weixinLogin button{
+  background: #00c280;
+  color:white;
+}

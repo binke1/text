@@ -1,0 +1,13 @@
+<!--pages/myLabel/myLabel.wxml-->
+<view class='labelContent'>
+  <view bindtap='selectLabel' data-id="{{item.labelId}}" class='label' wx:for="{{labelArr}}" wx:key="{{item.id}}">
+    <text>{{item.name}}</text>
+    <block>
+    <text wx:if="{{item.isSelect}}" class='iconfont icon-gou'></text>
+    <!-- <icon wx:if="{{item.isSelect}}" type="success_no_circle" size="16"/> -->
+    </block>
+  </view>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveLabel'>保存</button>
+</view>

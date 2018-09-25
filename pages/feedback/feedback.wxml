@@ -1,0 +1,8 @@
+<!--pages/feedback/feedback.wxml-->
+<view class='mentorC'>
+  <textarea value='{{str}}' maxlength='300' bindinput='contentChange' class='content'></textarea>
+  <view class='limit'><text class='limitColor'>{{num}}/</text><text>300</text></view>
+</view>
+<view class='saveView'>
+  <button bindtap='saveFeed' class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton'>提交</button>
+</view>

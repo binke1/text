@@ -1,0 +1,42 @@
+/* pages/myLabel/myLabel.wxss */
+@import './../../utils/wxss/iconfont1.wxss';
+.labelContent{
+  background-color: white;
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  padding:0 40rpx;
+  overflow: hidden;
+}
+.labelContent view{
+  display: flex;
+  justify-content: space-between;
+}
+.label{
+  height: 30rpx;
+  padding: 20rpx 0;
+}
+page{
+  background-color: #E6E9EC;
+}
+.save{
+  background-color: #00c882;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}
+.iconfont{
+  font-size: 32rpx;
+  color: #00c882
+}
+.saveView{
+  margin-top:100rpx;
+  margin-bottom: 60rpx;
+}
+.savePress{
+  background-color: #1a9c6f;
+  color:white;
+  width: 80%;
+  height: 92rpx;
+  border-radius: 46rpx;
+}

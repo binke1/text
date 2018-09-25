@@ -1,0 +1,13 @@
+<!--pages/companyName/companyName.wxml-->
+<view class='nick'>
+  <input confirm-type='done' type='text' focus='{{isFocus}}' placeholder='请输入公司名称' value='{{str}}' placeholder-class='fontSize' bindinput='getLength'></input>
+   <view  bindtap='clearValue' class='guanbi'>
+      <text class='iconfont icon-2guanbi'></text>
+    </view>
+</view>
+<!-- <view bindtap='getSchoolName' data-name='{{item.name}}' class='list' wx:for="{{schoolArr}}" wx:key="{{item.id}}">
+  <text>{{item.name}}</text>
+</view> -->
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveCompany'>完成</button>
+</view>

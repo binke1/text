@@ -1,0 +1,160 @@
+/* pages/internship/internship.wxss */
+@import './../../utils/wxss/iconfont.wxss';
+.shuffling{
+  width: 100%;
+  height: 700rpx;
+}
+.shuffling image{
+  width: 100%;
+  height: 100%;
+}
+.shuffling swiper{
+  height: 100%;
+}
+.contain-h{
+  margin:40rpx 0;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap:wrap; */
+  justify-content: space-between;
+  align-items: center;
+}
+.contain-h view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contain-h image{
+  margin-left: 30rpx;
+  width: 42rpx;
+  height: 38rpx;
+}
+.title{
+  font-size: 56rpx;
+  font-weight: bold;
+  font-family: 'PingFangSC-Semibold'
+}
+.content{
+  padding: 0 44rpx;
+}
+.contain-c{
+  font-size:30rpx;
+  color:#515355;
+}
+.contain-h2{
+  font-family: 'PingFangSC-Semibold';
+  font-size: 36rpx;
+  color:#000;
+  font-weight:800;
+  margin: 40rpx 0 30rpx 0;
+  padding-left: 4rpx;
+  display: block
+}
+.successiveEva{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10rpx;
+  margin-top: 10rpx;
+  border-bottom: 1px solid rgba(128,128,128,.1)
+}
+.stuHeadImg{
+  width: 100rpx;
+  height: 100rpx;
+}
+.stuHeadImg image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.stuContent{
+  font-size: 24rpx;
+}
+.stuMain{
+  width: 470rpx;
+}
+.subApplication{
+  margin: 50rpx auto 0;
+  width: 80%;
+  height: 88rpx;
+  background-color: #00c882;
+  color:white;
+  line-height: 88rpx;
+  border-radius: 44rpx;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+}
+.subSuccess{
+  background-color: #1a9c6f;
+}
+.collNum{
+  margin-left:20rpx;
+}
+ #stuDetails{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.41);
+  position: fixed;
+  top:0;
+  left:0;
+  display: block;
+}
+.stuDetails-c{
+  position: absolute;
+  top:162rpx;
+  width: 70%;
+  font-size:26rpx;
+  left: 10%;
+  background-color: white;
+  border-radius: 12rpx;
+  padding: 96rpx 5% 144rpx 5%;
+} 
+.close{
+  font-size: 50rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  font-weight: bold;
+}
+.stuDetailsImg{
+  width: 192rpx;
+  height: 240rpx;
+}
+.stuDetails-t{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+
+  }
+  .stu-conetent{
+    font-size:28rpx;
+    margin-top:100rpx;
+    line-height: 42rpx;
+  }
+  .stuName{
+    font-size:32rpx;
+    font-weight: 600;
+  }
+  .stuDetails-t-r{
+    margin-left: 20%;
+    line-height: 40rpx;
+  }
+  .conste{
+    margin: 5rpx 0 30rpx 0
+  }
+  .sex{
+    margin-right: 20rpx;
+  }
+  #hideDetailer{
+    display: none;
+  }
+  .hideGuan{
+    display: none
+  }
+  .submitAPPli{
+    height: 160rpx;
+  }
+  .like{
+    width: 150rpx;
+    height: 100rpx;
+  }

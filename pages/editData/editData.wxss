@@ -1,0 +1,121 @@
+/* pages/editData/editData.wxss */
+@import './../../utils/wxss/iconfont';
+
+page {
+  background-color: #e6e9ec;
+}
+
+.container {
+  width: 90%;
+  margin: 52rpx 5% 0 5%;
+}
+
+.lgImg {
+  width: 420rpx;
+  height: 420rpx;
+  background-color: #d2d5d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.upload-t {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lgIcon {
+  font-size: 40rpx;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.lgImg .iconfont {
+  font-size: 34rpx;
+  color: #5e5d5d;
+}
+
+.mdImg .iconfont {
+  font-size: 24rpx;
+  color: #5e5d5d;
+}
+
+.mdImg {
+  width: 210rpx;
+  height: 210rpx;
+  background-color: #d2d5d8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.two-mdImg {
+  margin-top: 20rpx;
+}
+
+.mdIcon {
+  font-size: 30rpx;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.upload-b {
+  margin-top: 20rpx;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hideImg {
+  display: none;
+}
+
+.showImg {
+  width: 100%;
+  height: 100%;
+}
+
+.editList view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 30rpx 0;
+  color: #464545;
+  font-size: 34rpx;
+}
+
+.editList .iconfont {
+  color: gray;
+}
+
+.listTitle {
+  font-weight: 600;
+}
+
+.listContent {
+  font-weight: normal;
+  color: gray;
+}
+
+.hideIcon {
+  display: none;
+}
+
+.importInfo {
+  color: red;
+  position: absolute;
+  left: -20rpx;
+  top: 8rpx;
+}
+
+.mandatory {
+  position: relative;
+}
+
+.myYS {
+  position: relative;
+}

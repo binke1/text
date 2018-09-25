@@ -1,0 +1,12 @@
+<!--pages/national/national.wxml-->
+<view class='nick'>
+  <view class='theInput'>
+    <input focus='{{isFocus}}' value='{{str}}' bindinput='getLength'></input>
+  </view>
+  <view>
+    <text class='hint'>请输入你的民族</text>
+  </view>
+</view>
+<view class='saveView'>
+  <button class='{{change}}' bindtouchstart='changButton' bindtouchend='reductionButton' bindtap='saveNickName'>保存</button>
+</view>

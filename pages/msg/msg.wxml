@@ -1,0 +1,14 @@
+<!--pages/msg/msg.wxml-->
+<view class='container'>
+  <view class='msg'>
+    <view class='msg-l'>
+        <image src='./../../images/guan1.png'></image>
+      <view>
+        <view class='customeService'>
+          <text class='personal'>人事专员</text>
+        </view>
+      </view>
+    </view>
+    <button send-message-title='管培生申请' show-message-card='true' hover-class='clickMsg' open-type='contact'></button>
+  </view>
+</view>
